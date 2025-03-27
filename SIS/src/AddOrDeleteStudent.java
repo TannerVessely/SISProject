@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class AddOrDeleteStudent {
 
+
     public static void addStudent() {
         Scanner userImput = new Scanner(System.in);
         ArrayList<Student> studentList = TextReader.getStudentInfo();
@@ -33,10 +34,16 @@ public class AddOrDeleteStudent {
 
         int newIndex = studentList.size() + 1; 
         Student newStudent = new Student(firstName, lastName, periodOne, p1Grade, periodTwo, p2Grade, periodThree, p3Grade, newIndex);
+
         studentList.add(newStudent);
 
         System.out.println("Student " + firstName + " " + lastName + " has been added.");
+        
+        TextReader.setStudentInfo(studentList);
+        MenuScreen.menuRunning();
+        return;
     }
+
 
     public static void deleteStudent() {
         Scanner userImput = new Scanner(System.in);
@@ -57,6 +64,7 @@ public class AddOrDeleteStudent {
         	
             System.out.println("Error: Student not found.");
         }
+
     }
 }
 
