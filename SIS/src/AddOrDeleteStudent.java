@@ -63,7 +63,11 @@ public class AddOrDeleteStudent {
         } else {
             System.out.println("Error: Student not found.");
         }
-
+        
+        
+        TextReader.setStudentInfo(studentList);
+        MenuScreen.menuRunning();
+        return;
     }
 }
 

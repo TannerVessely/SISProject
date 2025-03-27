@@ -33,7 +33,7 @@ public class TextReader {
 				line = br.readLine();
 			}
 				
-	
+			
 		} 
 		catch(IOException e)
 		{
