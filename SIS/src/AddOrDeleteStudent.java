@@ -54,6 +54,7 @@ public class AddOrDeleteStudent {
         if (removed) {
             System.out.println("Student " + firstName + " " + lastName + " has been deleted.");
         } else {
+        	
             System.out.println("Error: Student not found.");
         }
     }
