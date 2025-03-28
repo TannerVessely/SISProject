@@ -15,7 +15,7 @@ public class MenuScreen
 			System.out.println("4. Save all changes to text file");
 			System.out.println();
 			
-			TextReader.refreshStudents();
+	
 		
 			Scanner scn = new Scanner (System.in);
 			int answer = scn.nextInt();

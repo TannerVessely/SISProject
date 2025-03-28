@@ -56,7 +56,7 @@ public class PeriodSorter {
 			}
 		
 		
-			
+			scn.close();
 			SortStudentsSubmenu.sortStudents();
 		}
 		catch(InputMismatchException e)
