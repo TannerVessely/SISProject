@@ -1,8 +1,4 @@
-import java.util.Scanner;
-
-
-              
-public class SIS
+public class SISRunner
 	{
 
 		public static void main(String[] args)
@@ -12,6 +8,7 @@ public class SIS
 					+ "\\___ \\| |\\___ \\ \r\n"
 					+ " ___) | | ___) |\r\n"
 					+ "|____/___|____/ ");
+			
 				TextReader.runFileReader();
 				MenuScreen.menuRunning();
 				
