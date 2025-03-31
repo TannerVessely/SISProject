@@ -4,12 +4,14 @@ import java.util.ArrayList;
 public class GradeChangeSubmenu
 	{
 
+		static ArrayList <Student> gradeChanged = TextReader.getStudentInfo();
+				
+		
 		public static void GradeIsChanging()
 			{
 				
-				ArrayList <Student> gradeChanged = TextReader.getStudentInfo();
-				Scanner userInput = new Scanner (System.in);
 				
+				Scanner userInput = new Scanner (System.in);
 				
 				System.out.println();
 				System.out.println("You have chosen to switch a student's grade.");
@@ -32,7 +34,21 @@ public class GradeChangeSubmenu
 					{
 						if(gradeChanged.get(i).getFirstName().equals(studentChosen))
 							{
-								System.out.println("Found student!");
+								System.out.println("Found student! Here's their information:");
+								System.out.println(gradeChanged.get(i).getFirstName() + " " + gradeChanged.get(i).getLastName());
+								System.out.println(gradeChanged.get(i).getPeriodOne() + " " + gradeChanged.get(i).getP1grade());
+								System.out.println(gradeChanged.get(i).getPeriodTwo() + " " + gradeChanged.get(i).getP2Grade());
+								System.out.println(gradeChanged.get(i).getPeriodThree() + " " + gradeChanged.get(i).getP3Grade());
+								System.out.println();
+								
+								System.out.println("What class's do you want to change for " + studentChosen + "?");
+								
+								String classChosen = userInput.nextLine();
+								
+								System.out.println("You want to change " + classChosen + " for " + studentChosen);
+								System.out.println("What do you want to change their grade to?");
+								
+								String newGrade = userInput.nextLine();
 								
 								
 							}
@@ -40,5 +56,7 @@ public class GradeChangeSubmenu
 				
 
 			}
+		
+	
 
 	}
