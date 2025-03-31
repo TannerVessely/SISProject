@@ -25,7 +25,7 @@ public class PeriodSorter {
 				
 				for(Student s : periodSorted)
 				{
-					System.out.println(studentNum + ".) " +  s.getPeriodOne() + ": " + s.getLastName() + ", " + s.getFirstName());
+					System.out.println(studentNum + ". " +  s.getPeriodOne() + ": " + s.getLastName() + ", " + s.getFirstName());
 					studentNum++;
 				}
 			}
@@ -36,7 +36,7 @@ public class PeriodSorter {
 
 				for(Student s : periodSorted)
 				{
-					System.out.println(studentNum + ".) " +  s.getPeriodTwo() + ": " + s.getLastName() + ", " + s.getFirstName());
+					System.out.println(studentNum + ". " +  s.getPeriodTwo() + ": " + s.getLastName() + ", " + s.getFirstName());
 					studentNum++;
 				}
 			}
@@ -46,7 +46,7 @@ public class PeriodSorter {
 				
 				for(Student s : periodSorted)
 				{
-					System.out.println(studentNum + ".) " +  s.getPeriodThree() + ": " + s.getLastName() + ", " + s.getFirstName());
+					System.out.println(studentNum + ". " +  s.getPeriodThree() + ": " + s.getLastName() + ", " + s.getFirstName());
 					studentNum++;
 				}
 			}
