@@ -41,14 +41,13 @@ public class GradeChangeSubmenu
 								System.out.println(gradeChanged.get(i).getPeriodThree() + " " + gradeChanged.get(i).getP3Grade());
 								System.out.println();
 								
-								System.out.println("What class's do you want to change for " + studentChosen + "?");
-								
+								System.out.println("What class's grade do you want to change for " + studentChosen + "?");
 								String classChosen = userInput.nextLine();
 								
-								System.out.println("You want to change " + classChosen + " for " + studentChosen);
 								System.out.println("What do you want to change their grade to?");
-								
 								String newGrade = userInput.nextLine();
+								
+								System.out.println("You want to change " + classChosen + " to: " + newGrade);
 								
 								
 							}
