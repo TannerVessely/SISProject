@@ -12,7 +12,7 @@ public class LastNameSorter {
 		
 		for(Student s : lastNameSorted)
 		{
-			System.out.println(studentNum + ".) " + s.getLastName() + ", " + s.getFirstName());
+			System.out.println(studentNum + ". " + s.getLastName() + ", " + s.getFirstName());
 			studentNum++;
 		}
 		

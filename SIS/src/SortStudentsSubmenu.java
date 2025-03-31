@@ -18,6 +18,8 @@ public class SortStudentsSubmenu {
 		{
 			int choice = scn.nextInt();
 			
+			System.out.println();
+			
 			if(choice == 1)
 			{
 				LastNameSorter.runLastNameSort();

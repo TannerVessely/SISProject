@@ -12,7 +12,7 @@ public class GPASorter {
 		
 		for(Student s : sortedGPA)
 		{
-			System.out.println(studentNum + ".) " + s.getLastName() + ", " + s.getFirstName() + ": " + GPACalculator.calculateGPA(s));
+			System.out.println(studentNum + ". " + s.getLastName() + ", " + s.getFirstName() + ": " + GPACalculator.calculateGPA(s));
 			studentNum++;
 		}
 		

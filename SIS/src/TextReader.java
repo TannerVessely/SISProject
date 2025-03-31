@@ -33,14 +33,14 @@ public class TextReader {
 				line = br.readLine();
 			}
 				
-			
+			br.close();
+
 		} 
 		catch(IOException e)
 		{
 			System.out.println("Whoops, an error occured reading the file.");
 			
 		}
-		
 	}
 	public static void writeStudentList()
 	{
