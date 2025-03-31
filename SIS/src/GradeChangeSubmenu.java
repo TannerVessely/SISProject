@@ -47,7 +47,7 @@ public class GradeChangeSubmenu
 								System.out.println("What do you want to change their grade to?");
 								String newGrade = userInput.nextLine();
 								
-								System.out.println("You want to change " + classChosen + " to: " + newGrade);
+								System.out.println("You want to change the grade in " + classChosen + " to: " + newGrade);
 								
 								
 							}
